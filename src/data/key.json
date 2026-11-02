@@ -1,0 +1,108 @@
+{
+  "note": "Checked against Italian and English Wikipedia species pages, not against Flora d'Italia (its text layer does not contain these species). Grey alder (Alnus incana) could not be checked, so it is grouped with Italian alder. Black pine and Calabrian pine (Pinus nigra subsp. laricio) are one species in modern taxonomy, so the key returns both. Splits marked 'hard to separate' return more than one species.",
+  "start": "start",
+  "nodes": {
+    "start": {
+      "question": "What kind of leaves does the tree have?",
+      "options": [
+        { "label": "Needles or scales (conifer)", "next": "conifer" },
+        { "label": "Broad, flat leaves", "next": "broad" }
+      ]
+    },
+    "conifer": {
+      "question": "Are the needles in bundles, or single?",
+      "options": [
+        { "label": "In bundles of 2 or 5", "next": "pines" },
+        { "label": "Single, flat needles, two whitish bands underneath", "result": ["abies_alba"] }
+      ]
+    },
+    "pines": {
+      "question": "How many needles are in each bundle?",
+      "options": [
+        { "label": "5 per bundle, flexible, blue-green", "result": ["pinus_strobus"] },
+        { "label": "2 per bundle", "next": "pine_two" }
+      ]
+    },
+    "pine_two": {
+      "question": "How long and what colour are the needles?",
+      "options": [
+        { "label": "Long (12 to 25 cm), light green, very stiff", "result": ["pinus_pinaster"] },
+        { "label": "Dark green, 8 to 20 cm", "result": ["pinus_nigra", "pinus_laricio"] }
+      ]
+    },
+    "broad": {
+      "question": "Is the leaf one blade, or split into several leaflets?",
+      "options": [
+        { "label": "Split into several leaflets (compound)", "next": "compound" },
+        { "label": "One blade (simple)", "next": "simple" }
+      ]
+    },
+    "compound": {
+      "question": "What do the leaflets look like?",
+      "options": [
+        { "label": "9 to 19 small leaflets, spines at the leaf base on young trees", "result": ["robinia_pseudacacia"] },
+        { "label": "Large leaflets, 5 to 9, smooth edged", "result": ["juglans_regia"] },
+        { "label": "5 to 9 opposite leaflets, grey-woolly buds with black scales", "result": ["fraxinus_ornus"] },
+        { "label": "Shrub with 5 opposite toothed leaflets and pale pith in the stems", "result": ["sambucus_nigra"] }
+      ]
+    },
+    "simple": {
+      "question": "Does the leaf stay green through winter?",
+      "options": [
+        { "label": "Yes, evergreen", "next": "evergreen" },
+        { "label": "No, it falls in autumn", "next": "deciduous" }
+      ]
+    },
+    "evergreen": {
+      "question": "Which description fits best?",
+      "options": [
+        { "label": "Climbs and has small roots on the stems", "result": ["hedera_helix"] },
+        { "label": "Very glossy, spiny edges (older leaves can be smooth)", "result": ["ilex_aquifolium"] },
+        { "label": "Large tree, oval leaves, grey or tawny underneath", "result": ["quercus_ilex"] },
+        { "label": "Shrub 1 to 5 m tall, leathery, glossy leaves", "result": ["rhamnus_alaternus"] }
+      ]
+    },
+    "deciduous": {
+      "question": "How is the leaf edge shaped?",
+      "options": [
+        { "label": "Palm-shaped with five lobes", "result": ["acer_pseudoplatanus"] },
+        { "label": "Deep or clear lobes", "next": "lobed" },
+        { "label": "Toothed or smooth edges", "next": "toothed" }
+      ]
+    },
+    "lobed": {
+      "question": "Which oak is it? (check the acorns and their stalks)",
+      "options": [
+        { "label": "Acorns sit directly on the twig, with no stalk", "result": ["quercus_petraea"] },
+        { "label": "Acorns on long stalks, 3 to 7 cm", "result": ["quercus_robur"] },
+        { "label": "Bristle-tipped lobes, acorn cup with long hair-like scales", "result": ["quercus_cerris"] },
+        { "label": "Densely downy underneath", "result": ["quercus_pubescens"] }
+      ]
+    },
+    "toothed": {
+      "question": "What kind of edge does the leaf have?",
+      "options": [
+        { "label": "Smooth, wavy edge; hair-fringed when young", "result": ["fagus_sylvatica"] },
+        { "label": "Lance-shaped leaves with sharp, evenly spaced teeth", "result": ["castanea_sativa"] },
+        { "label": "Doubly toothed, veins raised and clearly visible underneath", "result": ["carpinus_betulus"] },
+        { "label": "Oval, grey-woolly underneath, catkins in spring", "result": ["salix_caprea"] },
+        { "label": "Round or triangular, with coarse teeth", "next": "poplar" },
+        { "label": "Rounded, with small woody cones", "next": "alder" }
+      ]
+    },
+    "poplar": {
+      "question": "Which poplar is it?",
+      "options": [
+        { "label": "Triangular, very pointed tip, long stalk", "result": ["populus_nigra"] },
+        { "label": "Rounded or diamond-shaped, leaves tremble in the wind", "result": ["populus_tremula"] }
+      ]
+    },
+    "alder": {
+      "question": "Which alder is it?",
+      "options": [
+        { "label": "Tip notched or cut straight across, sticky when young", "result": ["alnus_glutinosa"] },
+        { "label": "Pointed tip (cordata and incana are hard to separate)", "result": ["alnus_cordata", "alnus_incana"] }
+      ]
+    }
+  }
+}

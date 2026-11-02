@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tree ID</title>
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Tree ID</h1>
+      <p class="subtitle">Serra San Bruno area</p>
+
+      <label class="photo-button">
+        Take or choose a photo
+        <input id="photo" type="file" accept="image/*" capture="environment" />
+      </label>
+
+      <img id="preview" alt="Selected tree photo" hidden />
+      <p id="status" role="status"></p>
+      <ol id="results" class="results"></ol>
+
+      <section id="key" class="key" aria-label="Identification key"></section>
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
