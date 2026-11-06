@@ -13,7 +13,14 @@
       "question": "Are the needles in bundles, or single?",
       "options": [
         { "label": "In bundles of 2 or 5", "next": "pines" },
-        { "label": "Single, flat needles, two whitish bands underneath", "result": ["abies_alba"] }
+        { "label": "Single, flat needles, two whitish bands underneath", "next": "flat_needles" }
+      ]
+    },
+    "flat_needles": {
+      "question": "How do the needles and cones look?",
+      "options": [
+        { "label": "Needle tip notched, cones stand upright on the branches", "result": ["abies_alba"] },
+        { "label": "Needle tip pointed or rounded, smells of citrus when crushed, cones hang down", "result": ["pseudotsuga_menziesii"] }
       ]
     },
     "pines": {

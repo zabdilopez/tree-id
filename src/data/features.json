@@ -26,6 +26,7 @@
     "quercus_robur": ["Lobed leaves on a short stalk", "Acorns hang on long stalks"],
     "carpinus_betulus": ["Oval leaf with double teeth and strongly ribbed veins", "Bark smooth and grey, like muscle"],
     "populus_tremula": ["Rounded leaf on a flattened stalk, trembles in the wind", "Toothed edges"],
+    "pseudotsuga_menziesii": ["Flat, soft needles with a pointed or rounded tip, smelling of citrus when crushed", "Hanging cones with three-pointed bracts sticking out between the scales"],
     "rhamnus_alaternus": ["Small, leathery, glossy oval leaves with a smooth edge"],
     "hedera_helix": ["Climbing stem with small roots", "Glossy leaves with three to five lobes"]
   }

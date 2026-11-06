@@ -5,6 +5,7 @@
   "species": [
     { "id": "fagus_sylvatica", "genus": "Fagus", "epithet": "sylvatica", "commonNameEn": "beech", "commonNameIt": "faggio", "stemShare": 30.0, "basalAreaShare": 38.6, "pointShare": 53, "trainable": true, "latinNameSource": "INFC key" },
     { "id": "abies_alba", "genus": "Abies", "epithet": "alba", "commonNameEn": "silver fir", "commonNameIt": "abete bianco", "stemShare": 12.9, "basalAreaShare": 14.0, "pointShare": 31, "trainable": true, "latinNameSource": "INFC key" },
+    { "id": "pseudotsuga_menziesii", "genus": "Pseudotsuga", "epithet": "menziesii", "commonNameEn": "Douglas fir", "commonNameIt": "douglasia", "stemShare": null, "basalAreaShare": null, "pointShare": null, "trainable": true, "latinNameSource": "user, local observation" },
     { "id": "castanea_sativa", "genus": "Castanea", "epithet": "sativa", "commonNameEn": "sweet chestnut", "commonNameIt": "castagno", "stemShare": 11.6, "basalAreaShare": 10.4, "pointShare": 33, "trainable": true, "latinNameSource": "INFC key" },
     { "id": "quercus_ilex", "genus": "Quercus", "epithet": "ilex", "commonNameEn": "holm oak", "commonNameIt": "leccio", "stemShare": 10.0, "basalAreaShare": 4.8, "pointShare": 22, "trainable": true, "latinNameSource": "INFC key" },
     { "id": "salix_caprea", "genus": "Salix", "epithet": "caprea", "commonNameEn": "goat willow", "commonNameIt": "salicone", "stemShare": 5.6, "basalAreaShare": 0.6, "pointShare": 6, "trainable": true, "latinNameSource": "INFC key" },
