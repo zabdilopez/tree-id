@@ -52,7 +52,7 @@ export function startKey(container, key, species) {
       latin.textContent = ` ${s.genus} ${s.epithet}`;
       const italian = document.createElement("span");
       italian.textContent = ` (${s.commonNameIt})`;
-      item.append(name, latin, italian);
+      item.append(name, latin, italian, speciesDetail(s));
       list.append(item);
     }
     container.append(list);
@@ -64,6 +64,28 @@ export function startKey(container, key, species) {
   }
 
   showQuestion(key.start);
+}
+
+// Drawing and look-for notes for one species, shown under its name in the key result.
+function speciesDetail(species) {
+  const detail = document.createElement("div");
+  detail.className = "key-detail";
+
+  const figure = document.createElement("img");
+  figure.src = `public/illustrations/${species.id}.svg`;
+  figure.alt = `Drawing of ${species.commonNameEn} leaves or needles`;
+  figure.width = 120;
+  figure.height = 120;
+  detail.append(figure);
+
+  const features = document.createElement("ul");
+  for (const text of species.lookFor) {
+    const point = document.createElement("li");
+    point.textContent = text;
+    features.append(point);
+  }
+  detail.append(features);
+  return detail;
 }
 
 function makeButton(label, className, onClick) {

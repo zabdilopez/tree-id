@@ -1,0 +1,32 @@
+{
+  "note": "Short field checks for each species. Drawn diagrams in public/illustrations are simplified and not to scale.",
+  "features": {
+    "fagus_sylvatica": ["Oval leaf with a smooth or slightly wavy edge; fine hairs along the edge when young", "Smooth grey bark, even on old trees"],
+    "abies_alba": ["Single flat needles with a notched tip and two white lines underneath", "Upright cones stand on the top of the branches"],
+    "castanea_sativa": ["Long, narrow leaves with sharp, evenly spaced teeth", "Spiny green burrs hold the chestnuts"],
+    "quercus_ilex": ["Leathery leaves, dark and glossy above, grey-felted below", "Young trees have spiny leaf edges; older leaves are often smooth"],
+    "salix_caprea": ["Broad oval leaf, grey-woolly underneath", "Silver-grey catkins in early spring"],
+    "robinia_pseudacacia": ["9 to 19 small leaflets on one stem", "Spines at the base of young shoots"],
+    "pinus_nigra": ["Needles in pairs, dark green, stiff, 8 to 20 cm", "Grey, cracked bark on older trunks"],
+    "fraxinus_ornus": ["5 to 9 opposite leaflets", "Grey-woolly buds with black scales"],
+    "ilex_aquifolium": ["Very glossy, evergreen leaves with spiny edges on lower branches", "Red berries in winter"],
+    "quercus_cerris": ["Lobed leaves with bristle-like tips", "Acorn cup covered with long, hair-like scales"],
+    "quercus_pubescens": ["Lobed leaves, downy underneath, especially when young", "Short leaf stalk"],
+    "alnus_incana": ["Pointed oval leaf with double-toothed edges", "Catkins and small cones; grey bark on young trees"],
+    "pinus_pinaster": ["Long, stiff needles in pairs, 12 to 25 cm, light green", "Reddish, plated bark on old trunks"],
+    "quercus_petraea": ["Deeply lobed leaves with a very short stalk", "Acorns sit directly on the twig"],
+    "populus_nigra": ["Triangular leaf with a very pointed tip", "Long, flattened leaf stalk"],
+    "pinus_laricio": ["Needles in pairs, dark green, 8 to 20 cm", "Tall, straight trunk with grey-brown bark"],
+    "juglans_regia": ["5 to 9 large leaflets with smooth edges", "Leaves smell aromatic when crushed"],
+    "alnus_glutinosa": ["Rounded leaf with a notched tip", "Sticky young shoots and small woody cones"],
+    "pinus_strobus": ["Needles in bundles of five, soft and blue-green, 6 to 10 cm"],
+    "sambucus_nigra": ["5 toothed, opposite leaflets", "Shoots have pale, white pith inside"],
+    "acer_pseudoplatanus": ["Five pointed lobes with coarse teeth", "Paired winged fruits"],
+    "alnus_cordata": ["Pointed, glossy leaf with a shiny top", "Pale undersides"],
+    "quercus_robur": ["Lobed leaves on a short stalk", "Acorns hang on long stalks"],
+    "carpinus_betulus": ["Oval leaf with double teeth and strongly ribbed veins", "Bark smooth and grey, like muscle"],
+    "populus_tremula": ["Rounded leaf on a flattened stalk, trembles in the wind", "Toothed edges"],
+    "rhamnus_alaternus": ["Small, leathery, glossy oval leaves with a smooth edge"],
+    "hedera_helix": ["Climbing stem with small roots", "Glossy leaves with three to five lobes"]
+  }
+}

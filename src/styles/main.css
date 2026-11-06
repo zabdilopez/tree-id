@@ -112,3 +112,24 @@ main {
 .key-result span {
   color: var(--muted);
 }
+
+.key-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.key-detail img {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.key-detail ul {
+  flex: 1 1 180px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
